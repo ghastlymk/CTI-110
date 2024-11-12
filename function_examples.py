@@ -5,6 +5,20 @@ def my_animal(name, sound, pounds_food):
     print(f'the {name} eats {pounds_food} pounds in a day')
     print(f'the {name} eats {pounds_food * 7} pounds in a week')
 
+def getName():
+    name = input('enter your name: ')
+    return name + "******"
+
+def displayName(first):
+    lastName = input('enter your last name ')
+    fullName = first + '' + lastName
+    return fullName
+
+
+myName = getName()
+print(myName)
+print(displayName(myName))
+
 # create main function
 
 def main():
